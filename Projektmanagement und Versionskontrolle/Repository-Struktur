@@ -1,0 +1,77 @@
+
+Um das vorherige Szenario praxisnah zu gestalten, hier einige konkrete Beispiele und Implementierungsdetails, die du als Senior Full-Stack Entwickler für die Einrichtung einer Entwicklungsumgebung und die Versionskontrolle anwenden könntest:
+
+Beispiel für die Repository-Struktur in Git
+Hauptzweige:
+
+master: der Hauptzweig, der die Produktionsversion des Codes enthält.
+develop: ein Entwicklungszweig, der alle Features für die nächste Release enthält.
+Feature-Zweige:
+
+Erstellung von Feature-Zweigen aus dem develop-Zweig, z.B. feature/online-campus-neues-feature.
+Verwendung von Git Flow als Workflow-Modell zur Strukturierung der Arbeit an neuen Features, Hotfixes und Releases.
+Beispiel für Docker-Konfiguration
+Dockerfile:
+
+
+FROM node:14
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD ["node", "server.js"]
+Dieses Dockerfile erstellt ein einfaches Node.js-Image, das für die Entwicklungsumgebung verwendet werden kann.
+
+docker-compose.yml:
+
+
+
+version: '3'
+services:
+  webapp:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - NODE_ENV=development
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+Dieses docker-compose-Datei ermöglicht es, sowohl die Webanwendung als auch die MongoDB-Datenbank in Containern zu starten, was eine einfache und konsistente Entwicklungsumgebung für alle Beteiligten gewährleistet.
+
+Beispiel für CI/CD mit GitLab CI
+.gitlab-ci.yml:
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - npm install
+    - npm run build
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm run test
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying to production..."
+    - deploy_to_production.sh
+
+    
+Diese CI/CD-Konfiguration automatisiert das Bauen, Testen und Bereitstellen der Anwendung bei jedem Commit in den master-Zweig.
+Beispiel für ein Code-Review-Verfahren
+Implementierung von Pull-Request-Templates, die bestimmte Informationen vom Entwickler erfordern, wie z.B. eine Zusammenfassung der Änderungen, Tests, die durchgeführt wurden, und Dokumentation, die aktualisiert wurde.
+Anforderung, dass jeder Pull Request von mindestens zwei anderen Teammitgliedern überprüft wird, bevor er gemerged wird.
