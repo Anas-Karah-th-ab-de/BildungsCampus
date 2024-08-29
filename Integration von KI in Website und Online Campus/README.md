@@ -21,7 +21,7 @@ Dieses Konzept nutzt die Leistungsfähigkeit von OpenAI-APIs in Kombination mit 
    - **Erweiterung:** Entwicklung eines A/B-Testing-Systems, das verschiedene Inhaltsversionen testet und die am besten performenden Inhalte automatisch auswählt und präsentiert.
 
 4. **Automatisierte Inhaltsgenerierung:**
-   - **Funktion:** Nutzung von GPT-3 zur automatischen Erstellung und Aktualisierung von Inhalten, wie Blogbeiträgen, Kursbeschreibungen oder FAQs. Diese Inhalte können auf aktuellen Trends und Benutzeranfragen basieren.
+   - **Funktion:** Nutzung von gpt-4o-mini zur automatischen Erstellung und Aktualisierung von Inhalten, wie Blogbeiträgen, Kursbeschreibungen oder FAQs. Diese Inhalte können auf aktuellen Trends und Benutzeranfragen basieren.
    - **Ziele:** Sicherstellung, dass die Website und der Online-Campus stets aktuelle und relevante Inhalte bieten, ohne dass manuelle Eingriffe erforderlich sind.
 
 5. **Vorhersage von Abbruchquoten:**
