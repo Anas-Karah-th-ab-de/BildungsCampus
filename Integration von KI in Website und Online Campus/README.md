@@ -11,7 +11,7 @@ Dieses Konzept nutzt die Leistungsfähigkeit von OpenAI-APIs in Kombination mit 
    - **Erweiterung:** Die Lernpfade könnten durch den Einsatz von Reinforcement Learning weiter optimiert werden, wobei das System durch kontinuierliches Feedback von Studierenden lernt, welche Materialien und Methoden am effektivsten sind.
 
 2. **Chatbots für den Kundensupport:**
-   - **Funktion:** Implementierung von Chatbots auf Basis von OpenAI's GPT-3, um häufig gestellte Fragen zu beantworten und die Navigation im Online-Campus zu unterstützen. Diese Bots nutzen Natural Language Processing (NLP), um natürliche Sprache zu verstehen und benutzerfreundliche Antworten zu generieren.
+   - **Funktion:** Implementierung von Chatbots auf Basis von OpenAI's gpt-4o-min, um häufig gestellte Fragen zu beantworten und die Navigation im Online-Campus zu unterstützen. Diese Bots nutzen Natural Language Processing (NLP), um natürliche Sprache zu verstehen und benutzerfreundliche Antworten zu generieren.
    - **Ziele:** Verbesserung der Erreichbarkeit und Reaktionsfähigkeit des Supports sowie Entlastung des menschlichen Support-Teams durch automatisierte Antworten, die dennoch eine hohe Qualität und Genauigkeit bieten.
    - **Erweiterung:** Integration eines Eskalationspfads, bei dem komplexe Anfragen automatisch an menschliche Support-Mitarbeiter weitergeleitet werden, wenn der Chatbot eine Frage nicht zufriedenstellend beantworten kann.
 
