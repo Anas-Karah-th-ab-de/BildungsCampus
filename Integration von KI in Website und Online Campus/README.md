@@ -95,8 +95,9 @@ Dieses Konzept nutzt die Leistungsfähigkeit von OpenAI-APIs in Kombination mit 
 1. **Architekturdiagramme:** 
 ![Integration der KI-Modelle, APIs und Dateninfrastrukturen](./ki_architektur_diagramm.png)
 2. **User Interface Mockups:**
+   
 ![Mockup für ein Chatbot-Interface](./Mockup-Chatbot-Interface.png)
-3. **Interaktive Prototypen:** Entwicklung eines interaktiven Prototyps, der den Einsatz der KI-Modelle in einer realen Umgebung simuliert. Dieser Prototyp kann verwendet werden, um die Benutzererfahrung zu testen und zu optimieren, bevor die endgültige Implementierung erfolgt.
+4. **Interaktive Prototypen:** Entwicklung eines interaktiven Prototyps, der den Einsatz der KI-Modelle in einer realen Umgebung simuliert. Dieser Prototyp kann verwendet werden, um die Benutzererfahrung zu testen und zu optimieren, bevor die endgültige Implementierung erfolgt.
 
 ## Beispiel Planung
 - **Bild:**
